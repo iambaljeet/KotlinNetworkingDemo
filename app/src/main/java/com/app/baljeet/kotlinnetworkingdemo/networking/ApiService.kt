@@ -1,6 +1,5 @@
 package com.app.baljeet.kotlinnetworkingdemo.networking
 
-import android.provider.SyncStateContract
 import com.app.baljeet.kotlinnetworkingdemo.helpers.ApiConstants
 import com.app.baljeet.kotlinnetworkingdemo.models.UserModel
 import io.reactivex.Observable
@@ -14,7 +13,7 @@ import retrofit2.http.GET
 interface ApiService {
 
     @GET("employees")
-    fun getUsers() : Observable<ArrayList<UserModel>>
+    fun getUsers(): Observable<ArrayList<UserModel>>
 
     companion object {
         fun create(): ApiService {
